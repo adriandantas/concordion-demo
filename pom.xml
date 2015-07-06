@@ -97,6 +97,12 @@
                     <argLine>-XX:MaxPermSize=128m -Xmx256m</argLine>
                     <!-- Force alphabetical order to have a reproducible build -->
                     <runOrder>alphabetical</runOrder>
+                    <systemProperties>
+                        <property>
+                            <name>concordion.output.dir</name>
+                            <value>target/specs</value>
+                        </property>
+                    </systemProperties>
                 </configuration>
             </plugin>
             <plugin>
