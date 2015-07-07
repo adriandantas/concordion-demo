@@ -21,6 +21,6 @@ public class SaudacaoLoginFixture {
     }
 
     public String getSaudacao(String nome, String sexo) {
-        return saudacaoLogin.getSaudacao(nome);
+        return saudacaoLogin.getSaudacao(nome, sexo);
     }
 }
