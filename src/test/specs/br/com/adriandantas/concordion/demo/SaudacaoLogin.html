@@ -20,11 +20,11 @@
         <!-- Exemplo de comportamento da estória -->
         <div class="example">
             <h3>Exemplos</h3>
-            <table>
+            <table concordion:execute="#result = getSaudacao(#nome, #sexo)">
                 <tr>
-                    <th>Nome</th>
-                    <th>Sexo</th>
-                    <th>Saudação</th>
+                    <th concordion:set="#nome">Nome</th>
+                    <th concordion:set="#sexo">Sexo</th>
+                    <th concordion:assertEquals="#result">Saudação</th>
                 </tr>
                 <tr>
                     <td>Jorge</td>
