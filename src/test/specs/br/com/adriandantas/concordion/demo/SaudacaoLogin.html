@@ -14,14 +14,29 @@
 
         <!-- Definição do comportamento -->
         <p>
-            O sistema exibe uma mensagem de saudação com o nome do usuário.
+            O sistema exibe uma mensagem de saudação com o nome do usuário e com concordância nominal correta.
         </p>
 
         <!-- Exemplo de comportamento da estória -->
         <div class="example">
-            <h3>Exemplo</h3>
-            <p>A saudação para o usuário com nome <b><span concordion:set="#nome">Jorge</span></b>.</p>
-            <p concordion:assertEquals="getSaudacao(#nome)">Bem-vindo, Jorge.</p>
+            <h3>Exemplos</h3>
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Sexo</th>
+                    <th>Saudação</th>
+                </tr>
+                <tr>
+                    <td>Jorge</td>
+                    <td>M</td>
+                    <td>Bem-vindo, Jorge.</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>F</td>
+                    <td>Bem-vinda, Maria.</td>
+                </tr>
+            </table>
         </div>
     </body>
 </html>
