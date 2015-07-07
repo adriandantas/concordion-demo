@@ -14,13 +14,14 @@
 
         <!-- Definição do comportamento -->
         <p>
-            O sistema exibe uma mensagem de saudação.
+            O sistema exibe uma mensagem de saudação com o nome do usuário.
         </p>
 
         <!-- Exemplo de comportamento da estória -->
         <div class="example">
             <h3>Exemplo</h3>
-            <p concordion:assertEquals="getSaudacao()">Bem-vindo</p>
+            <p>A saudação para o usuário com nome <b><span concordion:set="#nome">Jorge</span></b>.</p>
+            <p concordion:assertEquals="getSaudacao(#nome)">Bem-vindo, Jorge.</p>
         </div>
     </body>
 </html>
