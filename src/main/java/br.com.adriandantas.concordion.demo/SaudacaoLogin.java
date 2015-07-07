@@ -10,7 +10,7 @@ public class SaudacaoLogin {
      *
      * @return Saudação
      */
-    public String getSaudacao() {
-        return "Bem-vindo";
+    public String getSaudacao(String nome) {
+        return String.format("Bem-vindo, %s.", nome);
     }
 }

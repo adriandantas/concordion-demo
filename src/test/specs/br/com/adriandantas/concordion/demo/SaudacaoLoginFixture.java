@@ -20,7 +20,7 @@ public class SaudacaoLoginFixture {
         saudacaoLogin = null;
     }
 
-    public String getSaudacao() {
-        return saudacaoLogin.getSaudacao();
+    public String getSaudacao(String nome) {
+        return saudacaoLogin.getSaudacao(nome);
     }
 }
